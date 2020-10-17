@@ -391,9 +391,65 @@ input[type=submit] {
      margin-right: 2%; 
 }
 
+
+/* FIND PAGE */
+
+.row {
+  margin: 20px;
+}
+
+.find {
+  background: #fafafa; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  left: 25%;
+}
+
+.tel a, .mail a {
+  text-decoration: none;
+  color: var(--black1)
+}
+
+.shop_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+/*
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+*/
 @media screen and (max-width: 900px){
   .background_copy{
     font-size: 18px;
+  }
+
+  .find{
+    width: 100%;
+    display: block;
   }
 }
 
