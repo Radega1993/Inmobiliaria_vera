@@ -42,7 +42,8 @@
     id int PRIMARY KEY CONSTRAINT `imagenes_id` REFERENCES inmueble(`id`),
     nombre varchar(20),
     ruta varchar(20));
-
+  
+  INSERT INTO users (myuser, password)VALUES ('admin', '12345678');
 sql;
 
   $res = $db->exec($q);
