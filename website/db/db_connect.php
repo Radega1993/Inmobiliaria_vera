@@ -1,24 +1,21 @@
 <?php
 
-  class BaseDatos extends SQLite3{
-    function __construct(){
-      $this->open("tiendas.db");
-    }
-  }
-
-  $db = new BaseDatos();
-  if ($db){
-    echo "<p> La base de datos 'tiendas' se abrio ok </p>";
-  } else {
-    echo "<p> ERROR: La base de datos 'tiendas' esta NOK </p>";
-  }
+  // Database name
+  $database_name = "tiendas.db";
+  // Database connection
+  $db = new SQLite3($database_name);
+  //if ($db){
+  //  echo "<p> La base de datos 'tiendas' se abrio ok </p>";
+  //} else {
+  //  echo "<p> ERROR: La base de datos 'tiendas' esta NOK </p>";
+  //}
 
   $q = <<<sql
   
   CREATE TABLE if not exists users (
     id int PRIMARY KEY,
-    myuser varchar(10),
-    password varchar(10));
+    myuser varchar(10) NOT NULL,
+    password varchar(10)NOT NULL);
 
   CREATE TABLE if not exists inmueble (
     id int PRIMARY KEY,
@@ -29,7 +26,7 @@
     codigo_postal int(5),
     direccion varchar(100),
     coordenadas_map varchar(50),
-    fecha_construccion varchar(255),
+    fecha_construccion int(4),
     propietario varchar(20),
     tipo_inmueble varchar(7),
     metros int(4),
@@ -47,12 +44,12 @@
 sql;
 
   $res = $db->exec($q);
-  if ($res){
-    echo "<p> La tabla se creo ok </p>";
-    $db->close();
-  } else {
-    echo "<p> ERROR: La tabla esta NOK </p>";
-    $db->close();
-  }
+  //if ($res){
+  //  echo "<p> La tabla se creo ok </p>";
+    //$db->close();
+  //} else {
+  //  echo "<p> ERROR: La tabla esta NOK </p>";
+    //$db->close();
+  //}
 
 ?>
