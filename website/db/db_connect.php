@@ -3,6 +3,7 @@
   // Database name
   $database_name = "tiendas.db";
   // Database connection
+  //$db = new PDO("sqlite:" . __DIR__ . "tiendas.db");
   $db = new SQLite3($database_name);
   //if ($db){
   //  echo "<p> La base de datos 'tiendas' se abrio ok </p>";
@@ -37,8 +38,7 @@
 
   CREATE TABLE if not exists imagenes (
     id int PRIMARY KEY CONSTRAINT `imagenes_id` REFERENCES inmueble(`id`),
-    nombre varchar(20),
-    ruta varchar(20));
+    file_name varchar(20));
   
   INSERT INTO users (myuser, password)VALUES ('admin', '12345678');
 sql;

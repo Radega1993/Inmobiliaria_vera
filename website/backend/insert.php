@@ -23,7 +23,7 @@ if( isset($_POST['submit_data']) ){
 
 	// Makes query with post data
   $query = <<<sql
-    INSERT INTO inmueble (imagen, pais, zona, provincia, codigo_postal, direccion, coordenadas_map, fecha_construccion, propietario, tipo_inmueble, metros, habitacion, bano, condicion, precio) VALUES ('1', '$pais', '$zona', '$provincia', '$codigo_postal', '$direccion', '$coordenadas_map', '$fecha_construccion', '$propietario' '$tipo_inmueble', '$metros', '$habitacion', '$bano', '$condicion', '$precio');
+    INSERT INTO inmueble (imagen, pais, zona, provincia, codigo_postal, direccion, coordenadas_map, fecha_construccion, propietario, tipo_inmueble, metros, habitacion, bano, condicion, precio) VALUES ('1', '$pais', '$zona', '$provincia', '$codigo_postal', '$direccion', '$coordenadas_map', '$fecha_construccion', '$propietario', '$tipo_inmueble', '$metros', '$habitacion', '$bano', '$condicion', '$precio');
 sql;
 	// Executes the query
 	// If data inserted then set success message otherwise set error message
@@ -85,7 +85,7 @@ sql;
       <tr>
         <td>Tipo inmueble:</td>
         <td><select name="tipo_inmueble">
-              <option value="piso" selected>Piso</option> 
+              <option value="piso">piso</option> 
               <option value="chalet">chalet</option>
               <option value="adosado">adosado</option>
               <option value="pareado">pareado</option>
