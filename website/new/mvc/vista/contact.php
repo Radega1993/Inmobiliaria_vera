@@ -2,7 +2,7 @@
 
     <main>
       <!-- START SECTION FORMULARIO -->
-    <section class="form">
+    <section class="form form--modifier">
       <div class="container">
         <h3 class="subtitle">¿Contacta con nosotros?</h3>
 

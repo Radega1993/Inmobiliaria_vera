@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Vera</title>
-</head>
-<body>
-
 <?php
 
-include "./db/db_connect.php";
+include_once "./model/model.php";
 
 $query = $db->query("SELECT * FROM imagenes");
-$filas = count($query); 
+$filas = 0; //set row counter to 0
+while($filas = $query->fetchArray()) {
+    $filas += 1; //+1 to the counter per row in result
+}
 
 if($filas > 0){
   while($row = $query->fetchArray()) {
@@ -21,5 +17,3 @@ if($filas > 0){
 }else{ ?>
     <p>No image(s) found...</p>
 <?php } ?>
-</body>
-</html>

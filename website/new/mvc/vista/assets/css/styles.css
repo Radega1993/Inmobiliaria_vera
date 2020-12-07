@@ -135,6 +135,12 @@ body{
   background: #fafafa;
 }
 
+.form--modifier {
+  width: 100%;
+  height: 75vh;
+
+}
+
 .subtitle{
   font-size: 42px;
   text-align: center;
@@ -429,7 +435,7 @@ input[type=submit] {
 
 .google-maps {
   position: relative;
-  padding-bottom: 75%; // This is the aspect ratio
+  padding-bottom: 0%; // This is the aspect ratio
   height: 0;
   overflow: hidden;
 }

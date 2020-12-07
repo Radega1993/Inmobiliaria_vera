@@ -1,5 +1,4 @@
 <?php
-//require_once("./controlador/main.php");
 require_once 'controlador/main.php';
 
 // Todo esta lógica hara el papel de un FrontController

@@ -22,6 +22,7 @@
             <a href="?c=WebController&a=find" class="link">Encuentranos</a>
             <a href="?c=WebController&a=inmueble" class="link">Vivienda</a>
             <a href="?c=WebController&a=contact" class="link">Contacto</a>
+            <a href="?c=WebController&a=login" class="link">Login</a>
           </div>
         </div>
       </nav>

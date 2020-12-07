@@ -56,14 +56,13 @@ class DataBase extends SQLite3{
     function closeConnectionBD(){
       $this->conn->close();
     }
+
+    function signIn($username, $password){
+      $username = $db->real_escape_string($username);
+      $query = "SELECT * FROM users WHERE myuser={$username} AND passwors={$password}";
+      echo $query;
+    }
 /*
-        function getIDNomCognom1Cognom2FromEstudiants(){
-            $sql = "SELECT id, Nom, Cognom1, Cognom2 FROM Estudiants";
-            $result = mysqli_query($this->conn, $sql);
-
-            return $result;
-        }
-
         function getUserByID($id){
             $sql = "SELECT * FROM Estudiants WHERE id='".$id."'";
             $result = mysqli_query($this->conn,$sql);

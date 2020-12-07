@@ -32,5 +32,19 @@
         require_once("vista/contact.php");
         require_once("vista/footer.php");
       }
+
+      public function login(){
+        //require_once("vista/header.php");
+        require_once("vista/login.php");
+        //require_once("vista/footer.php");
+      }
+
+      public function signin($request_params){
+        $this->$bd->signIn($request_params['username'], $request_params['password']);
+      }
+
+      public function insert(){
+        require_once("vista/backend/insert.php");
+      }
     }
 ?>
