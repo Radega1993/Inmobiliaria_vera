@@ -24,9 +24,9 @@ if ($_SESSION["lang"] == "ing") {
     <title>Vera Urrestarazu</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
   </head>
@@ -36,7 +36,7 @@ if ($_SESSION["lang"] == "ing") {
       <nav class="nav_hero">
         <div class="containes nav_container">
           <div class="logo">
-            <img class="logo_img" src="/assets/img/logo.png" alt="Vera Urrestarazu">
+            <img class="logo_img" src="./assets/img/logo.png" alt="Vera Urrestarazu">
             <h2 class="logo_name">Vera Urrestarazu<span class="point">.</span></h2>
           </div>
           <div class="links">

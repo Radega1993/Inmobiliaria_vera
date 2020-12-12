@@ -20,7 +20,7 @@ require_once("header.php");
       <h2 class="subtitle"><?php echo $weare; ?><span class="point">.</span></h2>
       <article class="container_bg">
         <div class="card">
-          <img src="/assets/img/person.jpg" alt="background" class="card_img">
+          <img src="./assets/img/person.jpg" alt="background" class="card_img">
         </div>
 
         <div class="background">
@@ -43,7 +43,7 @@ require_once("header.php");
             <div class="col-md-6 col-lg-3 mx-auto">
               <div class="box">
                 <div class="img-box">
-                  <img src="/assets/img/s1.jpg" alt="Asesoramiento Legal">
+                  <img src="./assets/img/s1.jpg" alt="Asesoramiento Legal">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -58,7 +58,7 @@ require_once("header.php");
             <div class="col-md-6 col-lg-3 mx-auto">
               <div class="box">
                 <div class="img-box">
-                  <img src="/assets/img/s2.jpg" alt="">
+                  <img src="./assets/img/s2.jpg" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -73,7 +73,7 @@ require_once("header.php");
             <div class="col-md-6 col-lg-3 mx-auto">
               <div class="box">
                 <div class="img-box">
-                  <img src="/assets/img/s3.jpg" alt="">
+                  <img src="./assets/img/s3.jpg" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -88,7 +88,7 @@ require_once("header.php");
             <div class="col-md-6 col-lg-3 mx-auto">
               <div class="box">
                 <div class="img-box">
-                  <img src="/assets/img/s4.jpg" alt="">
+                  <img src="./assets/img/s4.jpg" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
