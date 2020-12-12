@@ -9,7 +9,7 @@ if(isset($_POST["lang"])){
 if ($_SESSION["lang"] == "ing") {
   include_once "./assets/lang/ing.php";
 } elseif ($_SESSION["lang"] == "rus") {
-  include_once "./assets/lang/ing.php";
+  include_once "./assets/lang/rus.php";
 } else {
   include_once "./assets/lang/esp.php";
 }
