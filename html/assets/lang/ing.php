@@ -18,7 +18,7 @@ $longwe = "We are Vera Urrestarazu, a team of people who take care of everything
 
 $servicetitle = "Our services";
 
-$service1t = "ALegal Advice on the acquisition of Goods";
+$service1t = "Legal advice Advice on the acquisition of Goods";
 
 $service1d = "Integral adviser. Legal and consulting service. We address national and international clients, offering a complete service with customized solutions.";
 

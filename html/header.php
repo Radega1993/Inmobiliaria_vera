@@ -10,6 +10,10 @@ if ($_SESSION["lang"] == "ing") {
   include_once "./assets/lang/ing.php";
 } elseif ($_SESSION["lang"] == "rus") {
   include_once "./assets/lang/rus.php";
+} elseif ($_SESSION["lang"] == "rum") {
+  include_once "./assets/lang/rum.php";
+} elseif ($_SESSION["lang"] == "ger") {
+  include_once "./assets/lang/ger.php";
 } else {
   include_once "./assets/lang/esp.php";
 }
@@ -48,6 +52,8 @@ if ($_SESSION["lang"] == "ing") {
                 <option value='esp'>Español</option>
                 <option value='ing'>English</option>
                 <option value='rus'>Russian</option>
+                <option value='rum'>Rumano</option>
+                <option value='ger'>Aleman</option>
               </select>
             </form>
           </div>
