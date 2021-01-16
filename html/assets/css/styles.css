@@ -144,6 +144,7 @@ hr.solid {
 
 .copy--active{
   font-weight: 700;
+  color: var(--gold2);
 }
 
 .cta{
@@ -322,6 +323,19 @@ input[type=submit] {
   padding: 0;
 }
 
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ccc;
+  color: #000
+}
+
+.scroll {
+  min-height: 1500px;
+}
+
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
   .contact_section .form_container {
@@ -352,7 +366,7 @@ input[type=submit] {
 /* quien somos*/
 
 .card{
-  width: 30%;
+  width: 25%;
   padding: 0;
   overflow: hidden;
   border-radius: 10px;

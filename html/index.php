@@ -106,6 +106,12 @@ require_once("header.php");
 
       <!-- end service section -->
 
+      <div class="bottom text-center" id="alert">
+        This website use <a href="cookies.html">cookies</a>
+        <button onclick="accpetCookie()">
+          Click here for accept cookie
+       </button>
+      </div>
 
     </main>
 
